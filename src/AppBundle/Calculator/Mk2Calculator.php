@@ -7,7 +7,7 @@ namespace AppBundle\Calculator;
 class Mk2Calculator extends AbstractCalculator implements CalculatorInterface
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getSupportedModel(): string
     {
@@ -15,7 +15,7 @@ class Mk2Calculator extends AbstractCalculator implements CalculatorInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected function getAvailableChange(): array
     {

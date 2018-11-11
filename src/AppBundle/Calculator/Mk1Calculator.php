@@ -9,7 +9,7 @@ use AppBundle\Model\Change;
 class Mk1Calculator implements CalculatorInterface
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getSupportedModel(): string
     {
@@ -17,7 +17,7 @@ class Mk1Calculator implements CalculatorInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getChange(int $amount): ?Change
     {
