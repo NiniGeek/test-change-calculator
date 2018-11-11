@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  php:
+    build:
+      context: .
+      target: php
+    volumes:
+      - .:/srv:rw,cached
+
+  nginx:
+    build:
+      context: .
+      target: nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - php
+    volumes:
+      - ./web:/srv/web:ro
+
